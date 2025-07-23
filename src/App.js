@@ -1,35 +1,39 @@
-// import logo from './logo.svg';
-// import './App.css';
+// import React from 'react';
 
 // function App() {
+//   let user ="Raju"
+//   // const age = 20
+//   // const weight=50+"kg"
+//   // const hight=4+"fit";
+
+//   const changeUser=()=>{
+//     console.log(user)
+//     user="Shivek"
+//     console.log(user)
+//   }
 //   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
+//    <div>
+//     <h1>Username is {user} </h1>
+//      <button onClick={changeUser}>Change User</button>
+//    </div>
+
 //   );
 // }
 
 // export default App;
 
-import React from 'react';
 
-function App() {
-  return (
-    <h1>shivek</h1>
-  );
+import React,{useState} from 'react'
+
+const App=()=>{
+  const [num,setnum]=useState(0)
+  return(
+    <div>
+     <h3>Number is {num}</h3>
+      <button onClick={()=>setnum(num+10)}>Increment</button>
+      <button onClick={()=>setnum(num-10)}>Decrement</button>
+    </div>
+  )
 }
 
-export default App;
+export default App
