@@ -47,7 +47,7 @@ const App= ()=>{
   return(
     <div>
       <h2>Hello guys</h2>
-      <h3>Raju</h3>
+      <h3>Shivek</h3>
     </div>
   )
 }
