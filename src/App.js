@@ -42,14 +42,34 @@
 /////////////////////////////////////////////
 
 import React from 'react'
+import logo from './logo.svg';
+import'./App.css';
+import Header from './Header';
+import Footer from'./Footer';
+
 
 const App= ()=>{
+  let name="wscubetech"
   return(
-    <div>
-      <h2>Hello guys</h2>
-      <h3>Shivek</h3>
+    <div className='main' >
+      <Header/>
+      <div className='row'>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      </div>
+      <Footer/>
     </div>
   )
 }
 
 export default App
+
+function Card(){
+  return(
+    <div className='cardItems'>Card div</div>
+  )
+}
